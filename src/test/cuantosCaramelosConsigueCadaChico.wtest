@@ -1,0 +1,27 @@
+import model.casa.*
+import model.habitantes.*
+import model.disfraces.*
+import model.chicos.*
+
+describe "Cuantos caramelos pueden conseguir los chicos" {
+	fixture {
+		casa.quienAbreLaPuerta(jorge)
+		juanita.disfraz(disfrazFrozen)
+		tito.disfraz(disfrazZombie)
+	}
+	
+	test "Rolo consigue 1 caramelo siempre" {
+		assert.fail("Falta implementar")
+	}
+	
+	test "Juanita consigue 2 caramelos más de lo normal" {
+		assert.fail("Falta implementar")
+	}
+	
+	test "Tito disfrazado distinto a Juanita consigue la cantidad normal de caramelos" {
+		assert.fail("Falta implementar")
+	}
+	test "Tito disfrazado igual a Juanita consigue la cantidad normal de caramelos" {
+		assert.fail("Falta implementar")
+	}
+}

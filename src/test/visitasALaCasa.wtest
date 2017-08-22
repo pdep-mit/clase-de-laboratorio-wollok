@@ -1,0 +1,26 @@
+import model.casa.*
+import model.habitantes.*
+import model.disfraces.*
+import model.chicos.*
+
+describe "Los chicos visitan la casa" {
+
+	fixture {
+		casa.quienAbreLaPuerta(jorge)
+		
+		juanita.disfraz(disfrazZombie)
+		tito.disfraz(disfrazZombie)
+	}
+
+	test "Cuando Rolo visita una casa sólo aumenta el caos" {
+		assert.fail("Falta implementar")
+	}
+	
+	test "Cuando Tito visita una casa pide caramelos y aumenta el caos" {
+		assert.fail("Falta implementar")
+	}
+	
+	test "Cuando Juanita visita una casa sólo pide caramelos" {
+		assert.fail("Falta implementar")
+	}
+}

@@ -1,0 +1,27 @@
+import model.habitantes.*
+import model.disfraces.*
+
+describe "gustos de disfraces" {
+
+	test "A Azucena le gustan los disfraces muy tiernos" {
+		assert.fail("Falta implementar")
+	}
+	test "A Azucena no le gustan los disfraces poco tiernos" {
+		assert.fail("Falta implementar")
+	}
+	
+	test "A Sandra le gustan los disfraces más tiernos que aterradores"{
+		assert.fail("Falta implementar")
+	}
+	test "A Sandra no le gustan los disfraces menos tiernos que aterradores"{
+		assert.fail("Falta implementar")
+	}
+	
+	test "A Jorge le gustan los disfraces muy aterradores"{
+		assert.fail("Falta implementar")
+	}
+	
+	test "A Jorge no le gustan los disfraces poco aterradores"{
+		assert.fail("Falta implementar")
+	}
+}
