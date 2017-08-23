@@ -21,6 +21,14 @@ describe "Los chicos visitan la casa" {
 	}
 	
 	test "Cuando Juanita visita una casa sólo pide caramelos" {
-		assert.fail("Falta implementar")
+		juanita.visita(casa)
+		assert.equals(88, casa.cuantosCaramelosHay())
+		assert.equals(0, casa.caos())
+	}
+	test "Cuando Juanita visita una casa y está azucena sólo pide caramelos" {
+		casa.quienAbreLaPuerta(azucena)
+		juanita.visita(casa)
+		assert.equals(93, casa.cuantosCaramelosHay())
+		assert.equals(0, casa.caos())
 	}
 }
