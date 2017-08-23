@@ -1,3 +1,5 @@
+Versión de Gastón Castiñeira
+
 # clase-de-laboratorio-wollok
 
 Ejercicio Halloween colaborativo con testeo unitario
