@@ -18,6 +18,9 @@ object sandra {
 }
 
 object jorge {
+	method leGusta(disfraz) {
+		return disfraz.terror() > 8
+	}
 	method cuantosCaramelosDa(unaCasa, unDisfraz){
 		if(unaCasa.cuantosCaramelosHay() >= 50){
 			return 10

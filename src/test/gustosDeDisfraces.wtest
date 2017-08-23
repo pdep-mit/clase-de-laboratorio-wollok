@@ -15,14 +15,15 @@ describe "gustos de disfraces" {
 		assert.that(sandra.leGusta(disfrazFrozen))
 	}
 	test "A Sandra no le gustan los disfraces menos tiernos que aterradores"{
-		assert.fail("Falta implementar")
+		assert.notThat(sandra.leGusta(disfrazZombie))
 	}
 	
 	test "A Jorge le gustan los disfraces muy aterradores"{
-		assert.fail("Falta implementar")
+		disfrazCustom.terror(20) 
+		assert.that(jorge.leGusta(disfrazCustom))
 	}
 	
 	test "A Jorge no le gustan los disfraces poco aterradores"{
-		assert.fail("Falta implementar")
+		assert.notThat(jorge.leGusta(disfrazFrozen))
 	}
 }
