@@ -12,7 +12,16 @@ object azucena {
 }
 
 object sandra {
-
+	method leGusta(disfraz) {
+		return disfraz.ternura() > disfraz.terror()
+	}
+	method cuantosCaramelosDa(unaCasa, unDisfraz){
+		if(unaCasa.caos() < 3){
+			return 8
+		} else {
+			return 2
+		}
+	}
 }
 
 object jorge {
