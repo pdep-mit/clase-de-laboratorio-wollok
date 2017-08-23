@@ -12,7 +12,9 @@ object azucena {
 }
 
 object sandra {
-
+	method leGusta(disfraz) {
+		return disfraz.ternura() > disfraz.terror()
+	}
 }
 
 object jorge {
