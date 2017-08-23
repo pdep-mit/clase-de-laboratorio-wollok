@@ -12,17 +12,23 @@ describe "gustos de disfraces" {
 	}
 	
 	test "A Sandra le gustan los disfraces más tiernos que aterradores"{
-		assert.fail("Falta implementar")
+		disfrazCustom.ternura(10)
+		disfrazCustom.terror(5)
+		assert.that(sandra.leGusta(disfrazCustom))
 	}
 	test "A Sandra no le gustan los disfraces menos tiernos que aterradores"{
-		assert.fail("Falta implementar")
+		disfrazCustom.ternura(1)
+		disfrazCustom.terror(10)
+		assert.notThat(sandra.leGusta(disfrazCustom))
 	}
 	
 	test "A Jorge le gustan los disfraces muy aterradores"{
-		assert.fail("Falta implementar")
+		disfrazCustom.terror(10)
+		assert.that(jorge.leGusta(disfrazCustom))
 	}
 	
 	test "A Jorge no le gustan los disfraces poco aterradores"{
-		assert.fail("Falta implementar")
+		disfrazCustom.terror(0)
+		assert.notThat(azucena.leGusta(disfrazCustom))
 	}
 }
