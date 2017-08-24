@@ -6,10 +6,9 @@ object juanita {
 	
 	method disfraz() = disfraz
 	
-	
 	method visita(unaCasa) {
 		unaCasa.darCaramelos(
-			unaCasa.cuantosCaramelosDa(disfraz) + 2
+			self.cuantosCaramelosRecibe(unaCasa)
 		)
 	}
 	
@@ -28,8 +27,6 @@ object tito {
 	method disfraz(){
 		return disfraz
 	}
-	
-	
 	
 	method cuantosCaramelosRecibe(unaCasa) {
 		if(juanita.disfraz() == self.disfraz()){
