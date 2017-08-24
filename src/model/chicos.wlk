@@ -7,9 +7,7 @@ object juanita {
 	method disfraz() = disfraz
 	
 	method visita(unaCasa) {
-		unaCasa.darCaramelos(
-			self.cuantosCaramelosRecibe(unaCasa)
-		)
+		unaCasa.pideCaramelos(self)
 	}
 	
 	method cuantosCaramelosRecibe(unaCasa){
@@ -37,9 +35,7 @@ object tito {
 	}
 	method visita(unaCasa) {
 		unaCasa.aumentarCaos(1)
-		unaCasa.darCaramelos(
-			self.cuantosCaramelosRecibe(unaCasa)
-		)
+		unaCasa.pideCaramelos(self)
 	}
 	
 }
