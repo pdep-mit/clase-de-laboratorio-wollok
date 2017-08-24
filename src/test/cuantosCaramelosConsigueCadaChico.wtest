@@ -11,17 +11,18 @@ describe "Cuantos caramelos pueden conseguir los chicos" {
 	}
 	
 	test "Rolo consigue 1 caramelo siempre" {
-		assert.fail("Falta implementar")
+		assert.equals(1,rolo.cuantosCaramelosRecibe())
 	}
 	
 	test "Juanita consigue 2 caramelos más de lo normal" {
-		assert.fail("Falta implementar")
+		assert.equals(12,juanita.cuantosCaramelosRecibe(casa))
 	}
 	
 	test "Tito disfrazado distinto a Juanita consigue la cantidad normal de caramelos" {
-		assert.fail("Falta implementar")
+		assert.equals(10,tito.cuantosCaramelosRecibe(casa))
 	}
-	test "Tito disfrazado igual a Juanita consigue la cantidad normal de caramelos" {
-		assert.fail("Falta implementar")
+	test "Tito disfrazado igual a Juanita consigue la misma cantidad de Juanita" {
+		tito.disfraz(disfrazFrozen)
+		assert.equals(12,tito.cuantosCaramelosRecibe(casa))
 	}
 }
