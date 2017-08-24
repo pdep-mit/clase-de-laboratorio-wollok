@@ -12,10 +12,15 @@ object azucena {
 }
 
 object sandra {
-
+	method leGusta(disfraz) {
+		return disfraz.ternura() > disfraz.terror()
+	}
 }
 
 object jorge {
+	method leGusta(disfraz) {
+		return disfraz.terror() > 8
+	}
 	method cuantosCaramelosDa(unaCasa, unDisfraz){
 		if(unaCasa.cuantosCaramelosHay() >= 50){
 			return 10
