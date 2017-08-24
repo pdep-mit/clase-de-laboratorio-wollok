@@ -9,13 +9,12 @@ describe "Cuantos caramelos daría la casa con Sandra" {
 	}
 	
 	test "Sandra puede dar 8 caramelos si la casa está en orden"{	
-		casa.asignarCaos(0)	
+		casa.caos(0)	
 		assert.equals(8, sandra.cuantosCaramelosDa(casa, disfrazCustom))
 	}
 	
 	test "Sandra puede dar 2 caramelos si la casa no está en orden"{
-		casa.asignarCaos(3)
-		
+		casa.caos(3)
 		assert.equals(2, sandra.cuantosCaramelosDa(casa, disfrazCustom))
 	}
 }

@@ -12,7 +12,7 @@ object casa {
 	method cuantosCaramelosDa(disfraz){
 		return quienAbreLaPuerta.cuantosCaramelosDa(self, disfraz)
 	}
-	method asignarCaos(cantidad){
+	method caos(cantidad){
 		 caos = cantidad	
 	} 
 	
