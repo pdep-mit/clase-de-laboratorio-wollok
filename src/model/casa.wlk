@@ -25,4 +25,7 @@ object casa {
 	method darCaramelos(cantidad) {
 		cuantosCaramelosHay -= cuantosCaramelosHay.min(cantidad)
 	}
+	method aumentarCaos(cantidad){
+		caos += cantidad
+	}
 }

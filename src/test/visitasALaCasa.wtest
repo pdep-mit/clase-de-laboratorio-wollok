@@ -13,11 +13,15 @@ describe "Los chicos visitan la casa" {
 	}
 
 	test "Cuando Rolo visita una casa sólo aumenta el caos" {
-		assert.fail("Falta implementar")
+		rolo.visita(casa)
+		assert.equals(100, casa.cuantosCaramelosHay())
+		assert.equals(5, casa.caos())
 	}
 	
 	test "Cuando Tito visita una casa pide caramelos y aumenta el caos" {
-		assert.fail("Falta implementar")
+		tito.visita(casa)
+		assert.equals(88, casa.cuantosCaramelosHay())
+		assert.equals(1, casa.caos())
 	}
 	
 	test "Cuando Juanita visita una casa sólo pide caramelos" {

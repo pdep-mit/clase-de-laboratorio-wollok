@@ -35,12 +35,22 @@ object tito {
 			return unaCasa.cuantosCaramelosDa(disfraz)
 		}
 	}
+	method visita(unaCasa) {
+		unaCasa.aumentarCaos(1)
+		unaCasa.darCaramelos(
+			self.cuantosCaramelosRecibe(unaCasa)
+		)
+	}
 	
 }
 
 object rolo {
 	method cuantosCaramelosRecibe(){
 		return 1
+	}
+	
+	method visita(unaCasa) {
+		unaCasa.aumentarCaos(5)
 	}
 
 }
