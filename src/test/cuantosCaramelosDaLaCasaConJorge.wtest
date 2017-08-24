@@ -14,7 +14,7 @@ describe "Cuantos caramelos daría la casa con Jorge" {
 	}
 	
 	test "Jorge puede dar 4 caramelos si hay menos de 50 en la casa"{
-		casa.cuantosCaramelosHay(60)
+		casa.cuantosCaramelosHay(40)
 		assert.equals(4,jorge.cuantosCaramelosDa(casa, disfrazZombie))
 	}
 }

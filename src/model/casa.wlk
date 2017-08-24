@@ -9,6 +9,10 @@ object casa {
 	}
 	method cuantosCaramelosHay() = cuantosCaramelosHay
 	
+	method cuantosCaramelosHay(cantidad) {
+		cuantosCaramelosHay = cantidad 
+	}	
+	
 	method cuantosCaramelosDa(disfraz){
 		return quienAbreLaPuerta.cuantosCaramelosDa(self, disfraz)
 	}
@@ -20,5 +24,5 @@ object casa {
 	
 	method darCaramelos(cantidad) {
 		cuantosCaramelosHay -= cuantosCaramelosHay.min(cantidad)
-	}	
+	}
 }
